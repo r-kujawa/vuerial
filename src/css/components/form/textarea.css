@@ -1,0 +1,86 @@
+.vuerial-textarea {
+    @apply relative w-full;
+
+    &.is-readonly {
+        @apply text-gray;
+    }
+
+    .vuerial-textarea-style {
+        @apply absolute top-0 left-0 h-full w-full border-black;
+    }
+
+    textarea {
+        @apply relative block w-full pl-4 pr-3 appearance-none bg-transparent text-black z-10;
+
+        &:focus {
+            @apply outline-none;
+        }
+    }
+
+    label {
+        @apply absolute top-0 left-0 mt-4 ml-4 leading-none text-black origin-0;
+    }
+
+    textarea:focus + label,
+    textarea:not(:placeholder-shown) + label {
+        @apply transition duration-250 transform scale-75;
+    }
+
+    &:not(.is-underlined), /* The textarea will be outlined by default. */
+    &.is-outlined {
+        .vuerial-textarea-style {
+            @apply bg-white border rounded;
+        }
+
+        &:not(.is-readonly) {
+            &:hover,
+            &:focus-within {
+                .vuerial-textarea-style {
+                    @apply border-2;
+                }
+            }
+        }
+
+        textarea {
+            @apply py-4;
+        }
+
+        textarea:focus + label,
+        textarea:not(:placeholder-shown) + label {
+            @apply ml-3 -mt-2 px-1 bg-white;
+        }
+    }
+
+    &.is-underlined {
+        .vuerial-textarea-style {
+            @apply bg-gray-lightest border-b rounded-t;
+        }
+
+        &:not(.is-readonly) {
+            &:hover,
+            &:focus-within {
+                .vuerial-textarea-style {
+                    @apply bg-gray-lighter border-b-2;
+                }
+            }
+        }
+
+        textarea {
+            @apply pt-5 pb-3;
+        }
+
+        textarea:focus + label,
+        textarea:not(:placeholder-shown) + label {
+            @apply -translate-y-3;
+        }
+    }
+}
+.vuerial-control.has-error .vuerial-textarea {
+    .textarea-style {
+        @apply border-red;
+    }
+
+    label {
+        @apply text-red;
+    }
+}

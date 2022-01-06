@@ -1,0 +1,118 @@
+.vuerial-button {
+    @apply relative p-2 overflow-hidden;
+
+    &.is-fullwidth {
+        @apply w-full;
+    }
+
+    .vuerial-button-style {
+        @apply absolute top-0 left-0 h-full w-full bg-current rounded opacity-0 transition-opacity duration-250 -z-10;
+    }
+
+    .vuerial-button-spinner {
+        @apply absolute top-0 left-0 h-full w-full flex items-center justify-center;
+
+        i {
+            @apply animate-spin;
+        }
+    }
+
+    .vuerial-button-spinner + .vuerial-button-text {
+        @apply opacity-0;
+    }
+
+    &:hover {
+        .vuerial-button-style {
+            @apply opacity-10;
+        }
+    }
+
+    &:focus {
+        .vuerial-button-style {
+            @apply opacity-20;
+        }
+    }
+
+    &:active {
+        .vuerial-button-style {
+            @apply opacity-30;
+        }
+    }
+
+    &:disabled {
+        @apply text-gray cursor-not-allowed;
+
+        .vuerial-button-style {
+            @apply opacity-0;
+        }
+    }
+
+    &.is-filled {
+        .vuerial-button-style {
+            @apply bg-current opacity-100;
+        }
+
+        .vuerial-button-spinner,
+        .vuerial-button-text {
+            @apply text-white;
+        }
+
+        &:hover {
+            .vuerial-button-style {
+                @apply opacity-90;
+            }
+        }
+
+        &:focus {
+            .vuerial-button-style {
+                @apply opacity-80;
+            }
+        }
+
+        &:active {
+            .vuerial-button-style {
+                @apply opacity-70;
+            }
+        }
+
+        &:disabled {
+            .vuerial-button-style {
+                @apply opacity-100;
+            }
+        }
+    }
+
+    &.is-outlined {
+        .vuerial-button-style {
+            @apply bg-transparent border-2 border-current opacity-100;
+        }
+
+        &:hover:not(:disabled),
+        &:focus {
+            .vuerial-button-style {
+                @apply bg-current;
+            }
+
+            .vuerial-button-spinner,
+            .vuerial-button-text {
+                @apply text-white;
+            }
+        }
+
+        &:focus {
+            .vuerial-button-style {
+                @apply opacity-80;
+            }
+        }
+
+        &:active {
+            .vuerial-button-style {
+                @apply opacity-70;
+            }
+        }
+    }
+}
+
+.vuerial-control .vuerial-button {
+    @apply p-3;
+}

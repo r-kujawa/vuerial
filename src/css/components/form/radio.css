@@ -1,0 +1,39 @@
+.vuerial-radio {
+    @apply relative h-6 flex items-center;
+
+    &.is-disabled {
+        @apply text-gray;
+    }
+
+    input {
+        @apply absolute opacity-0;
+
+        & ~ .vuerial-radio-style {
+            @apply absolute top-0 left-0 h-6 w-6 flex items-center justify-center bg-transparent border-2 rounded-full border-black text-black -z-10;
+
+            & > i {
+                @apply text-xs opacity-0;
+            }
+        }
+
+        &:focus ~ .vuerial-radio-style {
+            @apply border-3;
+        }
+
+        &:checked ~ .vuerial-radio-style {
+            @apply border-current text-current;
+
+            & > i {
+                @apply opacity-100;
+            }
+        }
+    }
+
+    label {
+        @apply pl-8 w-full text-black;
+    }
+
+    &:hover input:not(:focus):not(:disabled) + .vuerial-radio-style {
+        @apply border-3;
+    }
+}

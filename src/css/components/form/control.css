@@ -1,0 +1,17 @@
+.vuerial-control {
+    @apply my-4;
+
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &.has-errors {
+        @apply text-red;
+    }
+
+    .help {
+        @apply pl-4 pr-3 text-xs;
+    }
+}

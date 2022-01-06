@@ -1,0 +1,17 @@
+.vuerial-input-menu {
+    @apply relative max-w-xs mx-auto z-10;
+
+    .vuerial-input-menu-container {
+        @apply absolute left-0 w-full py-2 rounded-b-lg text-black -z-10;
+        /* @apply elevation-4; tailwindcss-elevation removed, this is the workaround. */
+        box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.20), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+
+        &.menu-up {
+            @apply top-0 rounded-b-none rounded-t-lg transform -translate-y-full;
+        }
+
+        .vuerial-input-menu-item-current {
+            @apply bg-black bg-opacity-10;
+        }
+    }
+}

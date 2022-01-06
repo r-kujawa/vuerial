@@ -1,0 +1,109 @@
+.vuerial-input {
+    @apply relative max-w-xs mx-auto;
+
+    &.is-fullwidth {
+        @apply max-w-full;
+    }
+
+    &.is-readonly {
+        @apply text-gray;
+    }
+
+    .vuerial-input-style {
+        @apply absolute top-0 left-0 h-full w-full border-current;
+    }
+
+    input {
+        @apply relative block h-12 w-full pl-4 pr-3 appearance-none bg-transparent text-black z-10;
+
+        &:focus {
+            @apply outline-none;
+        }
+    }
+
+    label {
+        @apply absolute top-0 left-0 mt-4 ml-4 leading-none text-current origin-0;
+    }
+
+    input:focus + label,
+    input:not(:placeholder-shown) + label {
+        @apply transition duration-250 transform scale-75;
+    }
+
+    &:not(.is-underlined), /* The input will be outlined by default. */
+    &.is-outlined {
+        .vuerial-input-style {
+            @apply border rounded;
+        }
+
+        &:not(.is-readonly) {
+            &:hover,
+            &:focus-within {
+                .input-style {
+                    @apply border-2;
+                }
+            }
+        }
+
+        input {
+            @apply py-4;
+        }
+
+        input:focus + label,
+        input:not(:placeholder-shown) + label {
+            @apply ml-3 -mt-2 px-1 bg-white;
+        }
+    }
+
+    &.is-underlined {
+        .vuerial-input-style {
+            @apply bg-gray-lightest border-b rounded-t;
+        }
+
+        &:not(.is-readonly) {
+            &:hover,
+            &:focus-within {
+                .vuerial-input-style {
+                    @apply bg-gray-lighter border-b-2;
+                }
+            }
+        }
+
+        input {
+            @apply pt-5 pb-3;
+        }
+
+        input:focus + label,
+        input:not(:placeholder-shown) + label {
+            @apply -translate-y-3;
+        }
+    }
+
+    .prefix, .suffix {
+        @apply absolute top-0 h-6 w-6 my-3;
+    }
+
+    &.has-prefix {
+        input {
+            @apply pl-12;
+        }
+
+        label {
+            @apply ml-12;
+        }
+
+        .prefix {
+            @apply left-0 ml-4;
+        }
+    }
+
+    &.has-suffix {
+        input {
+            @apply pr-10;
+        }
+
+        .suffix {
+            @apply right-0 mr-3;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.vuerial-checkbox {
+    @apply relative h-6 flex items-center;
+
+    &.is-fullwidth {
+        @apply w-full;
+        
+        label {
+            @apply w-full;
+        }
+    }
+
+    &.is-disabled {
+        @apply text-gray;
+    }
+
+    input {
+        @apply absolute opacity-0;
+
+        & ~ .vuerial-checkbox-style {
+            @apply absolute top-0 left-0 h-6 w-6 flex items-center justify-center border rounded border-current -z-10;
+
+            & > i {
+                @apply text-white opacity-0;
+            }
+        }
+
+        &:focus ~ .vuerial-checkbox-style {
+            @apply border-2;
+        }
+
+        &:checked ~ .vuerial-checkbox-style {
+            @apply bg-current;
+
+            & > i {
+                @apply opacity-100;
+            }
+        }
+    }
+
+    label {
+        @apply pl-8;
+    }
+
+    &:hover input:not(:focus):not(:disabled) + .vuerial-checkbox-style {
+        @apply bg-transparent border-2;
+
+        & > i {
+            @apply text-current;
+        }
+    }
+}
