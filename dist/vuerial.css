@@ -405,36 +405,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
   --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-.components_hidden__OppAQ {
+.hidden {
   display: none;
 }
-.components_-rotate-180__YLpyl {
+.-rotate-180 {
   --tw-rotate: -180deg;
   transform: var(--tw-transform);
 }
-.components_transform__B0GVR {
+.transform {
   transform: var(--tw-transform);
 }
-.components_blur__JwLyW {
+.blur {
   --tw-blur: blur(8px);
   filter: var(--tw-filter);
 }
-.components_transition-transform__1vW1P {
+.transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.components_duration-500__3r4-z {
+.duration-500 {
   transition-duration: 500ms;
 }
-.components_vuerial-button__ziiOu {
+.vuerial-button {
   position: relative;
   overflow: hidden;
   padding: 0.5rem;
 }
-.components_vuerial-button__ziiOu.components_is-fullwidth__78XEu {
+.vuerial-button.is-fullwidth {
   width: 100%;
 }
-.components_vuerial-button__ziiOu .components_vuerial-button-style__nkIhl {
+.vuerial-button .vuerial-button-style {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -448,7 +448,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.components_vuerial-button__ziiOu .components_vuerial-button-spinner__Y73EY {
+.vuerial-button .vuerial-button-spinner {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -458,85 +458,85 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
   justify-content: center;
 }
-@-webkit-keyframes components_spin__gqVAg {
+@-webkit-keyframes spin {
 
   to {
     transform: rotate(360deg);
   }
 }
-@keyframes components_spin__gqVAg {
+@keyframes spin {
 
   to {
     transform: rotate(360deg);
   }
 }
-.components_vuerial-button__ziiOu .components_vuerial-button-spinner__Y73EY i {
-  -webkit-animation: components_spin__gqVAg 1s linear infinite;
-          animation: components_spin__gqVAg 1s linear infinite;
+.vuerial-button .vuerial-button-spinner i {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
 }
-.components_vuerial-button__ziiOu .components_vuerial-button-spinner__Y73EY + .components_vuerial-button-text__bOTly {
+.vuerial-button .vuerial-button-spinner + .vuerial-button-text {
   opacity: 0;
 }
-.components_vuerial-button__ziiOu:hover .components_vuerial-button-style__nkIhl {
+.vuerial-button:hover .vuerial-button-style {
   opacity: 0.1;
 }
-.components_vuerial-button__ziiOu:focus .components_vuerial-button-style__nkIhl {
+.vuerial-button:focus .vuerial-button-style {
   opacity: 0.2;
 }
-.components_vuerial-button__ziiOu:active .components_vuerial-button-style__nkIhl {
+.vuerial-button:active .vuerial-button-style {
   opacity: 0.3;
 }
-.components_vuerial-button__ziiOu:disabled {
+.vuerial-button:disabled {
   cursor: not-allowed;
   --tw-text-opacity: 1;
   color: rgb(126 126 126 / var(--tw-text-opacity));
 }
-.components_vuerial-button__ziiOu:disabled .components_vuerial-button-style__nkIhl {
+.vuerial-button:disabled .vuerial-button-style {
   opacity: 0;
 }
-.components_vuerial-button__ziiOu.components_is-filled__7S2IW .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-filled .vuerial-button-style {
   background-color: currentColor;
   opacity: 1;
 }
-.components_vuerial-button__ziiOu.components_is-filled__7S2IW .components_vuerial-button-spinner__Y73EY, .components_vuerial-button__ziiOu.components_is-filled__7S2IW .components_vuerial-button-text__bOTly {
+.vuerial-button.is-filled .vuerial-button-spinner, .vuerial-button.is-filled .vuerial-button-text {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.components_vuerial-button__ziiOu.components_is-filled__7S2IW:hover .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-filled:hover .vuerial-button-style {
   opacity: 0.9;
 }
-.components_vuerial-button__ziiOu.components_is-filled__7S2IW:focus .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-filled:focus .vuerial-button-style {
   opacity: 0.8;
 }
-.components_vuerial-button__ziiOu.components_is-filled__7S2IW:active .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-filled:active .vuerial-button-style {
   opacity: 0.7;
 }
-.components_vuerial-button__ziiOu.components_is-filled__7S2IW:disabled .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-filled:disabled .vuerial-button-style {
   opacity: 1;
 }
-.components_vuerial-button__ziiOu.components_is-outlined__0QAIs .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-outlined .vuerial-button-style {
   border-width: 2px;
   border-color: currentColor;
   background-color: transparent;
   opacity: 1;
 }
-.components_vuerial-button__ziiOu.components_is-outlined__0QAIs:hover:not(:disabled) .components_vuerial-button-style__nkIhl, .components_vuerial-button__ziiOu.components_is-outlined__0QAIs:focus .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-outlined:hover:not(:disabled) .vuerial-button-style, .vuerial-button.is-outlined:focus .vuerial-button-style {
   background-color: currentColor;
 }
-.components_vuerial-button__ziiOu.components_is-outlined__0QAIs:hover:not(:disabled) .components_vuerial-button-spinner__Y73EY, .components_vuerial-button__ziiOu.components_is-outlined__0QAIs:hover:not(:disabled) .components_vuerial-button-text__bOTly, .components_vuerial-button__ziiOu.components_is-outlined__0QAIs:focus .components_vuerial-button-spinner__Y73EY, .components_vuerial-button__ziiOu.components_is-outlined__0QAIs:focus .components_vuerial-button-text__bOTly {
+.vuerial-button.is-outlined:hover:not(:disabled) .vuerial-button-spinner, .vuerial-button.is-outlined:hover:not(:disabled) .vuerial-button-text, .vuerial-button.is-outlined:focus .vuerial-button-spinner, .vuerial-button.is-outlined:focus .vuerial-button-text {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.components_vuerial-button__ziiOu.components_is-outlined__0QAIs:focus .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-outlined:focus .vuerial-button-style {
   opacity: 0.8;
 }
-.components_vuerial-button__ziiOu.components_is-outlined__0QAIs:active .components_vuerial-button-style__nkIhl {
+.vuerial-button.is-outlined:active .vuerial-button-style {
   opacity: 0.7;
 }
-.components_vuerial-control__IJzGb .components_vuerial-button__ziiOu {
+.vuerial-control .vuerial-button {
   padding: 0.75rem;
 }
-.components_vuerial-menu__0Ou3w {
+.vuerial-menu {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --scrollbar-track: initial;
@@ -544,76 +544,76 @@ Ensure the default browser behavior of the `hidden` attribute.
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
   overflow: overlay;
 }
-.components_vuerial-menu__0Ou3w.components_overflow-x-hidden__oQmFw {
+.vuerial-menu.overflow-x-hidden {
   overflow-x: hidden;
 }
-.components_vuerial-menu__0Ou3w.components_overflow-y-hidden__mWEul {
+.vuerial-menu.overflow-y-hidden {
   overflow-y: hidden;
 }
-.components_vuerial-menu__0Ou3w::-webkit-scrollbar-track {
+.vuerial-menu::-webkit-scrollbar-track {
   background-color: var(--scrollbar-track);
 }
-.components_vuerial-menu__0Ou3w::-webkit-scrollbar-thumb {
+.vuerial-menu::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-thumb);
 }
-.components_vuerial-menu__0Ou3w {
+.vuerial-menu {
   scrollbar-width: thin;
 }
-.components_vuerial-menu__0Ou3w::-webkit-scrollbar {
+.vuerial-menu::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-.components_vuerial-menu__0Ou3w {
+.vuerial-menu {
   --scrollbar-track: transparent;
   --scrollbar-thumb: #c5c5c5;
 }
 /* tailwind-scrollbar plugin doesn't support 'border' variant in v3, this is the workaround. */
-.components_vuerial-menu__0Ou3w::-webkit-scrollbar-thumb {
+.vuerial-menu::-webkit-scrollbar-thumb {
   border-radius: 9999px;
 }
-.components_vuerial-menu__0Ou3w .components_vuerial-menu-item__n78lt a {
+.vuerial-menu .vuerial-menu-item a {
   display: inline-block;
   width: 100%;
   padding: 0.25rem;
 }
-.components_vuerial-menu__0Ou3w .components_vuerial-menu-item__n78lt a:hover {
+.vuerial-menu .vuerial-menu-item a:hover {
   cursor: pointer;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;
 }
-.components_vuerial-control__IJzGb {
+.vuerial-control {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.components_vuerial-control__IJzGb:before,
-    .components_vuerial-control__IJzGb:after {
+.vuerial-control:before,
+    .vuerial-control:after {
         content: ' ';
         display: table;
     }
-.components_vuerial-control__IJzGb.components_has-errors__VjJp5 {
+.vuerial-control.has-errors {
   --tw-text-opacity: 1;
   color: rgb(224 33 40 / var(--tw-text-opacity));
 }
-.components_vuerial-control__IJzGb .components_help__ZmnHM {
+.vuerial-control .help {
   padding-left: 1rem;
   padding-right: 0.75rem;
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.components_vuerial-input__seCBj {
+.vuerial-input {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: 20rem;
 }
-.components_vuerial-input__seCBj.components_is-fullwidth__78XEu {
+.vuerial-input.is-fullwidth {
   max-width: 100%;
 }
-.components_vuerial-input__seCBj.components_is-readonly__j2UCk {
+.vuerial-input.is-readonly {
   --tw-text-opacity: 1;
   color: rgb(126 126 126 / var(--tw-text-opacity));
 }
-.components_vuerial-input__seCBj .components_vuerial-input-style__j4YpZ {
+.vuerial-input .vuerial-input-style {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -621,7 +621,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
   border-color: currentColor;
 }
-.components_vuerial-input__seCBj input {
+.vuerial-input input {
   position: relative;
   z-index: 10;
   display: block;
@@ -636,11 +636,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.components_vuerial-input__seCBj input:focus {
+.vuerial-input input:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-.components_vuerial-input__seCBj label {
+.vuerial-input label {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -650,7 +650,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
   color: currentColor;
 }
-.components_vuerial-input__seCBj input:not(:-moz-placeholder-shown) + label {
+.vuerial-input input:not(:-moz-placeholder-shown) + label {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
   transform: var(--tw-transform);
@@ -659,7 +659,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.components_vuerial-input__seCBj input:not(:-ms-input-placeholder) + label {
+.vuerial-input input:not(:-ms-input-placeholder) + label {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
   transform: var(--tw-transform);
@@ -668,7 +668,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.components_vuerial-input__seCBj input:focus + label, .components_vuerial-input__seCBj input:not(:placeholder-shown) + label {
+.vuerial-input input:focus + label, .vuerial-input input:not(:placeholder-shown) + label {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
   transform: var(--tw-transform);
@@ -676,18 +676,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.components_vuerial-input__seCBj:not(.components_is-underlined__snWTR) .components_vuerial-input-style__j4YpZ, .components_vuerial-input__seCBj.components_is-outlined__0QAIs .components_vuerial-input-style__j4YpZ {
+.vuerial-input:not(.is-underlined) .vuerial-input-style, .vuerial-input.is-outlined .vuerial-input-style {
   border-radius: 0.25rem;
   border-width: 1px;
 }
-.components_vuerial-input__seCBj:not(.components_is-underlined__snWTR):not(.components_is-readonly__j2UCk):hover .components_input-style__zrcLy, .components_vuerial-input__seCBj:not(.components_is-underlined__snWTR):not(.components_is-readonly__j2UCk):focus-within .components_input-style__zrcLy, .components_vuerial-input__seCBj.components_is-outlined__0QAIs:not(.components_is-readonly__j2UCk):hover .components_input-style__zrcLy, .components_vuerial-input__seCBj.components_is-outlined__0QAIs:not(.components_is-readonly__j2UCk):focus-within .components_input-style__zrcLy {
+.vuerial-input:not(.is-underlined):not(.is-readonly):hover .input-style, .vuerial-input:not(.is-underlined):not(.is-readonly):focus-within .input-style, .vuerial-input.is-outlined:not(.is-readonly):hover .input-style, .vuerial-input.is-outlined:not(.is-readonly):focus-within .input-style {
   border-width: 2px;
 }
-.components_vuerial-input__seCBj:not(.components_is-underlined__snWTR) input, .components_vuerial-input__seCBj.components_is-outlined__0QAIs input {
+.vuerial-input:not(.is-underlined) input, .vuerial-input.is-outlined input {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.components_vuerial-input__seCBj:not(.components_is-underlined__snWTR) input:not(:-moz-placeholder-shown) + label, .components_vuerial-input__seCBj.components_is-outlined__0QAIs input:not(:-moz-placeholder-shown) + label {
+.vuerial-input:not(.is-underlined) input:not(:-moz-placeholder-shown) + label, .vuerial-input.is-outlined input:not(:-moz-placeholder-shown) + label {
   margin-left: 0.75rem;
   margin-top: -0.5rem;
   --tw-bg-opacity: 1;
@@ -695,7 +695,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.components_vuerial-input__seCBj:not(.components_is-underlined__snWTR) input:not(:-ms-input-placeholder) + label, .components_vuerial-input__seCBj.components_is-outlined__0QAIs input:not(:-ms-input-placeholder) + label {
+.vuerial-input:not(.is-underlined) input:not(:-ms-input-placeholder) + label, .vuerial-input.is-outlined input:not(:-ms-input-placeholder) + label {
   margin-left: 0.75rem;
   margin-top: -0.5rem;
   --tw-bg-opacity: 1;
@@ -703,7 +703,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.components_vuerial-input__seCBj:not(.components_is-underlined__snWTR) input:focus + label, .components_vuerial-input__seCBj:not(.components_is-underlined__snWTR) input:not(:placeholder-shown) + label, .components_vuerial-input__seCBj.components_is-outlined__0QAIs input:focus + label, .components_vuerial-input__seCBj.components_is-outlined__0QAIs input:not(:placeholder-shown) + label {
+.vuerial-input:not(.is-underlined) input:focus + label, .vuerial-input:not(.is-underlined) input:not(:placeholder-shown) + label, .vuerial-input.is-outlined input:focus + label, .vuerial-input.is-outlined input:not(:placeholder-shown) + label {
   margin-left: 0.75rem;
   margin-top: -0.5rem;
   --tw-bg-opacity: 1;
@@ -711,35 +711,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.components_vuerial-input__seCBj.components_is-underlined__snWTR .components_vuerial-input-style__j4YpZ {
+.vuerial-input.is-underlined .vuerial-input-style {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   border-bottom-width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
-.components_vuerial-input__seCBj.components_is-underlined__snWTR:not(.components_is-readonly__j2UCk):hover .components_vuerial-input-style__j4YpZ, .components_vuerial-input__seCBj.components_is-underlined__snWTR:not(.components_is-readonly__j2UCk):focus-within .components_vuerial-input-style__j4YpZ {
+.vuerial-input.is-underlined:not(.is-readonly):hover .vuerial-input-style, .vuerial-input.is-underlined:not(.is-readonly):focus-within .vuerial-input-style {
   border-bottom-width: 2px;
   --tw-bg-opacity: 1;
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
-.components_vuerial-input__seCBj.components_is-underlined__snWTR input {
+.vuerial-input.is-underlined input {
   padding-top: 1.25rem;
   padding-bottom: 0.75rem;
 }
-.components_vuerial-input__seCBj.components_is-underlined__snWTR input:not(:-moz-placeholder-shown) + label {
+.vuerial-input.is-underlined input:not(:-moz-placeholder-shown) + label {
   --tw-translate-y: -0.75rem;
   transform: var(--tw-transform);
 }
-.components_vuerial-input__seCBj.components_is-underlined__snWTR input:not(:-ms-input-placeholder) + label {
+.vuerial-input.is-underlined input:not(:-ms-input-placeholder) + label {
   --tw-translate-y: -0.75rem;
   transform: var(--tw-transform);
 }
-.components_vuerial-input__seCBj.components_is-underlined__snWTR input:focus + label, .components_vuerial-input__seCBj.components_is-underlined__snWTR input:not(:placeholder-shown) + label {
+.vuerial-input.is-underlined input:focus + label, .vuerial-input.is-underlined input:not(:placeholder-shown) + label {
   --tw-translate-y: -0.75rem;
   transform: var(--tw-transform);
 }
-.components_vuerial-input__seCBj .components_prefix__K2L1i, .components_vuerial-input__seCBj .components_suffix__hAw1q {
+.vuerial-input .prefix, .vuerial-input .suffix {
   position: absolute;
   top: 0px;
   margin-top: 0.75rem;
@@ -747,32 +747,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.5rem;
   width: 1.5rem;
 }
-.components_vuerial-input__seCBj.components_has-prefix__EUZ4h input {
+.vuerial-input.has-prefix input {
   padding-left: 3rem;
 }
-.components_vuerial-input__seCBj.components_has-prefix__EUZ4h label {
+.vuerial-input.has-prefix label {
   margin-left: 3rem;
 }
-.components_vuerial-input__seCBj.components_has-prefix__EUZ4h .components_prefix__K2L1i {
+.vuerial-input.has-prefix .prefix {
   left: 0px;
   margin-left: 1rem;
 }
-.components_vuerial-input__seCBj.components_has-suffix__kuRyl input {
+.vuerial-input.has-suffix input {
   padding-right: 2.5rem;
 }
-.components_vuerial-input__seCBj.components_has-suffix__kuRyl .components_suffix__hAw1q {
+.vuerial-input.has-suffix .suffix {
   right: 0px;
   margin-right: 0.75rem;
 }
-.components_vuerial-textarea__Dq4TJ {
+.vuerial-textarea {
   position: relative;
   width: 100%;
 }
-.components_vuerial-textarea__Dq4TJ.components_is-readonly__j2UCk {
+.vuerial-textarea.is-readonly {
   --tw-text-opacity: 1;
   color: rgb(126 126 126 / var(--tw-text-opacity));
 }
-.components_vuerial-textarea__Dq4TJ .components_vuerial-textarea-style__Lpl2v {
+.vuerial-textarea .vuerial-textarea-style {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -781,7 +781,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.components_vuerial-textarea__Dq4TJ textarea {
+.vuerial-textarea textarea {
   position: relative;
   z-index: 10;
   display: block;
@@ -795,11 +795,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.components_vuerial-textarea__Dq4TJ textarea:focus {
+.vuerial-textarea textarea:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-.components_vuerial-textarea__Dq4TJ label {
+.vuerial-textarea label {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -810,7 +810,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.components_vuerial-textarea__Dq4TJ textarea:not(:-moz-placeholder-shown) + label {
+.vuerial-textarea textarea:not(:-moz-placeholder-shown) + label {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
   transform: var(--tw-transform);
@@ -819,7 +819,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.components_vuerial-textarea__Dq4TJ textarea:not(:-ms-input-placeholder) + label {
+.vuerial-textarea textarea:not(:-ms-input-placeholder) + label {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
   transform: var(--tw-transform);
@@ -828,7 +828,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.components_vuerial-textarea__Dq4TJ textarea:focus + label, .components_vuerial-textarea__Dq4TJ textarea:not(:placeholder-shown) + label {
+.vuerial-textarea textarea:focus + label, .vuerial-textarea textarea:not(:placeholder-shown) + label {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
   transform: var(--tw-transform);
@@ -836,20 +836,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.components_vuerial-textarea__Dq4TJ:not(.components_is-underlined__snWTR) .components_vuerial-textarea-style__Lpl2v, .components_vuerial-textarea__Dq4TJ.components_is-outlined__0QAIs .components_vuerial-textarea-style__Lpl2v {
+.vuerial-textarea:not(.is-underlined) .vuerial-textarea-style, .vuerial-textarea.is-outlined .vuerial-textarea-style {
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.components_vuerial-textarea__Dq4TJ:not(.components_is-underlined__snWTR):not(.components_is-readonly__j2UCk):hover .components_vuerial-textarea-style__Lpl2v, .components_vuerial-textarea__Dq4TJ:not(.components_is-underlined__snWTR):not(.components_is-readonly__j2UCk):focus-within .components_vuerial-textarea-style__Lpl2v, .components_vuerial-textarea__Dq4TJ.components_is-outlined__0QAIs:not(.components_is-readonly__j2UCk):hover .components_vuerial-textarea-style__Lpl2v, .components_vuerial-textarea__Dq4TJ.components_is-outlined__0QAIs:not(.components_is-readonly__j2UCk):focus-within .components_vuerial-textarea-style__Lpl2v {
+.vuerial-textarea:not(.is-underlined):not(.is-readonly):hover .vuerial-textarea-style, .vuerial-textarea:not(.is-underlined):not(.is-readonly):focus-within .vuerial-textarea-style, .vuerial-textarea.is-outlined:not(.is-readonly):hover .vuerial-textarea-style, .vuerial-textarea.is-outlined:not(.is-readonly):focus-within .vuerial-textarea-style {
   border-width: 2px;
 }
-.components_vuerial-textarea__Dq4TJ:not(.components_is-underlined__snWTR) textarea, .components_vuerial-textarea__Dq4TJ.components_is-outlined__0QAIs textarea {
+.vuerial-textarea:not(.is-underlined) textarea, .vuerial-textarea.is-outlined textarea {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.components_vuerial-textarea__Dq4TJ:not(.components_is-underlined__snWTR) textarea:not(:-moz-placeholder-shown) + label, .components_vuerial-textarea__Dq4TJ.components_is-outlined__0QAIs textarea:not(:-moz-placeholder-shown) + label {
+.vuerial-textarea:not(.is-underlined) textarea:not(:-moz-placeholder-shown) + label, .vuerial-textarea.is-outlined textarea:not(:-moz-placeholder-shown) + label {
   margin-left: 0.75rem;
   margin-top: -0.5rem;
   --tw-bg-opacity: 1;
@@ -857,7 +857,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.components_vuerial-textarea__Dq4TJ:not(.components_is-underlined__snWTR) textarea:not(:-ms-input-placeholder) + label, .components_vuerial-textarea__Dq4TJ.components_is-outlined__0QAIs textarea:not(:-ms-input-placeholder) + label {
+.vuerial-textarea:not(.is-underlined) textarea:not(:-ms-input-placeholder) + label, .vuerial-textarea.is-outlined textarea:not(:-ms-input-placeholder) + label {
   margin-left: 0.75rem;
   margin-top: -0.5rem;
   --tw-bg-opacity: 1;
@@ -865,7 +865,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.components_vuerial-textarea__Dq4TJ:not(.components_is-underlined__snWTR) textarea:focus + label, .components_vuerial-textarea__Dq4TJ:not(.components_is-underlined__snWTR) textarea:not(:placeholder-shown) + label, .components_vuerial-textarea__Dq4TJ.components_is-outlined__0QAIs textarea:focus + label, .components_vuerial-textarea__Dq4TJ.components_is-outlined__0QAIs textarea:not(:placeholder-shown) + label {
+.vuerial-textarea:not(.is-underlined) textarea:focus + label, .vuerial-textarea:not(.is-underlined) textarea:not(:placeholder-shown) + label, .vuerial-textarea.is-outlined textarea:focus + label, .vuerial-textarea.is-outlined textarea:not(:placeholder-shown) + label {
   margin-left: 0.75rem;
   margin-top: -0.5rem;
   --tw-bg-opacity: 1;
@@ -873,64 +873,64 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.components_vuerial-textarea__Dq4TJ.components_is-underlined__snWTR .components_vuerial-textarea-style__Lpl2v {
+.vuerial-textarea.is-underlined .vuerial-textarea-style {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   border-bottom-width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
-.components_vuerial-textarea__Dq4TJ.components_is-underlined__snWTR:not(.components_is-readonly__j2UCk):hover .components_vuerial-textarea-style__Lpl2v, .components_vuerial-textarea__Dq4TJ.components_is-underlined__snWTR:not(.components_is-readonly__j2UCk):focus-within .components_vuerial-textarea-style__Lpl2v {
+.vuerial-textarea.is-underlined:not(.is-readonly):hover .vuerial-textarea-style, .vuerial-textarea.is-underlined:not(.is-readonly):focus-within .vuerial-textarea-style {
   border-bottom-width: 2px;
   --tw-bg-opacity: 1;
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
-.components_vuerial-textarea__Dq4TJ.components_is-underlined__snWTR textarea {
+.vuerial-textarea.is-underlined textarea {
   padding-top: 1.25rem;
   padding-bottom: 0.75rem;
 }
-.components_vuerial-textarea__Dq4TJ.components_is-underlined__snWTR textarea:not(:-moz-placeholder-shown) + label {
+.vuerial-textarea.is-underlined textarea:not(:-moz-placeholder-shown) + label {
   --tw-translate-y: -0.75rem;
   transform: var(--tw-transform);
 }
-.components_vuerial-textarea__Dq4TJ.components_is-underlined__snWTR textarea:not(:-ms-input-placeholder) + label {
+.vuerial-textarea.is-underlined textarea:not(:-ms-input-placeholder) + label {
   --tw-translate-y: -0.75rem;
   transform: var(--tw-transform);
 }
-.components_vuerial-textarea__Dq4TJ.components_is-underlined__snWTR textarea:focus + label, .components_vuerial-textarea__Dq4TJ.components_is-underlined__snWTR textarea:not(:placeholder-shown) + label {
+.vuerial-textarea.is-underlined textarea:focus + label, .vuerial-textarea.is-underlined textarea:not(:placeholder-shown) + label {
   --tw-translate-y: -0.75rem;
   transform: var(--tw-transform);
 }
-.components_vuerial-control__IJzGb.components_has-error__wzBIo .components_vuerial-textarea__Dq4TJ .components_textarea-style__ZKqB0 {
+.vuerial-control.has-error .vuerial-textarea .textarea-style {
   --tw-border-opacity: 1;
   border-color: rgb(224 33 40 / var(--tw-border-opacity));
 }
-.components_vuerial-control__IJzGb.components_has-error__wzBIo .components_vuerial-textarea__Dq4TJ label {
+.vuerial-control.has-error .vuerial-textarea label {
   --tw-text-opacity: 1;
   color: rgb(224 33 40 / var(--tw-text-opacity));
 }
 /* select here */
-.components_vuerial-checkbox__CwAGS {
+.vuerial-checkbox {
   position: relative;
   display: flex;
   height: 1.5rem;
   align-items: center;
 }
-.components_vuerial-checkbox__CwAGS.components_is-fullwidth__78XEu {
+.vuerial-checkbox.is-fullwidth {
   width: 100%;
 }
-.components_vuerial-checkbox__CwAGS.components_is-fullwidth__78XEu label {
+.vuerial-checkbox.is-fullwidth label {
   width: 100%;
 }
-.components_vuerial-checkbox__CwAGS.components_is-disabled__bAgqF {
+.vuerial-checkbox.is-disabled {
   --tw-text-opacity: 1;
   color: rgb(126 126 126 / var(--tw-text-opacity));
 }
-.components_vuerial-checkbox__CwAGS input {
+.vuerial-checkbox input {
   position: absolute;
   opacity: 0;
 }
-.components_vuerial-checkbox__CwAGS input ~ .components_vuerial-checkbox-style__MabB- {
+.vuerial-checkbox input ~ .vuerial-checkbox-style {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -944,45 +944,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
   border-color: currentColor;
 }
-.components_vuerial-checkbox__CwAGS input ~ .components_vuerial-checkbox-style__MabB- > i {
+.vuerial-checkbox input ~ .vuerial-checkbox-style > i {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   opacity: 0;
 }
-.components_vuerial-checkbox__CwAGS input:focus ~ .components_vuerial-checkbox-style__MabB- {
+.vuerial-checkbox input:focus ~ .vuerial-checkbox-style {
   border-width: 2px;
 }
-.components_vuerial-checkbox__CwAGS input:checked ~ .components_vuerial-checkbox-style__MabB- {
+.vuerial-checkbox input:checked ~ .vuerial-checkbox-style {
   background-color: currentColor;
 }
-.components_vuerial-checkbox__CwAGS input:checked ~ .components_vuerial-checkbox-style__MabB- > i {
+.vuerial-checkbox input:checked ~ .vuerial-checkbox-style > i {
   opacity: 1;
 }
-.components_vuerial-checkbox__CwAGS label {
+.vuerial-checkbox label {
   padding-left: 2rem;
 }
-.components_vuerial-checkbox__CwAGS:hover input:not(:focus):not(:disabled) + .components_vuerial-checkbox-style__MabB- {
+.vuerial-checkbox:hover input:not(:focus):not(:disabled) + .vuerial-checkbox-style {
   border-width: 2px;
   background-color: transparent;
 }
-.components_vuerial-checkbox__CwAGS:hover input:not(:focus):not(:disabled) + .components_vuerial-checkbox-style__MabB- > i {
+.vuerial-checkbox:hover input:not(:focus):not(:disabled) + .vuerial-checkbox-style > i {
   color: currentColor;
 }
-.components_vuerial-radio__QU2Q2 {
+.vuerial-radio {
   position: relative;
   display: flex;
   height: 1.5rem;
   align-items: center;
 }
-.components_vuerial-radio__QU2Q2.components_is-disabled__bAgqF {
+.vuerial-radio.is-disabled {
   --tw-text-opacity: 1;
   color: rgb(126 126 126 / var(--tw-text-opacity));
 }
-.components_vuerial-radio__QU2Q2 input {
+.vuerial-radio input {
   position: absolute;
   opacity: 0;
 }
-.components_vuerial-radio__QU2Q2 input ~ .components_vuerial-radio-style__CnEnt {
+.vuerial-radio input ~ .vuerial-radio-style {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1000,38 +1000,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.components_vuerial-radio__QU2Q2 input ~ .components_vuerial-radio-style__CnEnt > i {
+.vuerial-radio input ~ .vuerial-radio-style > i {
   font-size: 0.75rem;
   line-height: 1rem;
   opacity: 0;
 }
-.components_vuerial-radio__QU2Q2 input:focus ~ .components_vuerial-radio-style__CnEnt {
+.vuerial-radio input:focus ~ .vuerial-radio-style {
   border-width: 3px;
 }
-.components_vuerial-radio__QU2Q2 input:checked ~ .components_vuerial-radio-style__CnEnt {
+.vuerial-radio input:checked ~ .vuerial-radio-style {
   border-color: currentColor;
   color: currentColor;
 }
-.components_vuerial-radio__QU2Q2 input:checked ~ .components_vuerial-radio-style__CnEnt > i {
+.vuerial-radio input:checked ~ .vuerial-radio-style > i {
   opacity: 1;
 }
-.components_vuerial-radio__QU2Q2 label {
+.vuerial-radio label {
   width: 100%;
   padding-left: 2rem;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.components_vuerial-radio__QU2Q2:hover input:not(:focus):not(:disabled) + .components_vuerial-radio-style__CnEnt {
+.vuerial-radio:hover input:not(:focus):not(:disabled) + .vuerial-radio-style {
   border-width: 3px;
 }
-.components_vuerial-input-menu__ADqdj {
+.vuerial-input-menu {
   position: relative;
   z-index: 10;
   margin-left: auto;
   margin-right: auto;
   max-width: 20rem;
 }
-.components_vuerial-input-menu__ADqdj .components_vuerial-input-menu-container__dyC1s {
+.vuerial-input-menu .vuerial-input-menu-container {
   position: absolute;
   left: 0px;
   z-index: -10;
@@ -1045,7 +1045,7 @@ Ensure the default browser behavior of the `hidden` attribute.
         /* @apply elevation-4; tailwindcss-elevation removed, this is the workaround. */
         box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.20), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
 }
-.components_vuerial-input-menu__ADqdj .components_vuerial-input-menu-container__dyC1s.components_menu-up__o238f {
+.vuerial-input-menu .vuerial-input-menu-container.menu-up {
   top: 0px;
   --tw-translate-y: -100%;
   transform: var(--tw-transform);
@@ -1054,7 +1054,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-.components_vuerial-input-menu__ADqdj .components_vuerial-input-menu-container__dyC1s .components_vuerial-input-menu-item-current__lOE0H {
+.vuerial-input-menu .vuerial-input-menu-container .vuerial-input-menu-item-current {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;
 }

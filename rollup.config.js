@@ -22,7 +22,7 @@ export default [
       postcss({
         extensions: ['.css'],
         extract: path.resolve('dist/vuerial.css'),
-        modules: true,
+        modules: false,
         config: {
           path: 'postcss.config.js'
         },
