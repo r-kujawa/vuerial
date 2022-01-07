@@ -10,13 +10,14 @@ export default [
     input: 'src/index.js',
     output: [
       {
+        format: 'cjs',
+        file: 'dist/vuerial.js',
+        exports: 'default',
+      },
+      {
         format: 'esm',
         file: 'dist/vuerial.mjs',
       },
-      {
-        format: 'cjs',
-        file: 'dist/vuerial.js',
-      }
     ],
     plugins: [
       postcss({
@@ -34,5 +35,5 @@ export default [
       vue(),
       peerDepsExternal(),
     ],
-  }
+  },
 ];
