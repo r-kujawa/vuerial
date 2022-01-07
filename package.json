@@ -1,11 +1,12 @@
 {
   "name": "vuerial",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Material design components made with TailwindCSS and Vue.js.",
   "main": "dist/vuerial.js",
   "module": "dist/vuerial.mjs",
   "files": [
-    "dist/*"
+    "dist/*",
+    "src/*"
   ],
   "scripts": {
     "build": "rollup -c",
