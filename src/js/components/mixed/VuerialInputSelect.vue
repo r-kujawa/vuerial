@@ -1,7 +1,10 @@
 <template>
     <div class="vuerial-select">
         <input type="hidden" :name="name" :value="modelValue">
-        <v-input-menu v-model="value" :options="items" :label="label" :readonly="readonly" :disabled="disabled" />
+        <v-input-menu v-model="value" :options="items" :label="label" :readonly="readonly" :disabled="disabled" is-underlined="isUnderlined"
+            :input-attributes="inputAttributes"
+            :input-events="inputEvents"
+        />
     </div>
 </template>
 
@@ -26,6 +29,18 @@ export default {
         options: {
             type: Array,
             required: true,
+        },
+        isUnderlined: {
+            type: Boolean,
+            default: false,
+        },
+        inputAttributes: {
+            type: Object,
+            default: () => ({}),
+        },
+        inputEvents: {
+            type: Object,
+            default: () => ({}),
         },
     },
     emits: ['update:modelValue'],

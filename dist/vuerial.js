@@ -524,6 +524,10 @@ var script$5 = {
             type: Boolean,
             default: false
         },
+        isUnderlined: {
+            type: Boolean,
+            default: false,
+        },
         inputAttributes: {
             type: Object,
             default: () => ({}),
@@ -567,7 +571,7 @@ const _hoisted_3$3 = ["for"];
 
 function render$5(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("div", {
-    class: vue.normalizeClass(["vuerial-input", [{ 'is-readonly': $props.readonly || $props.disabled, 'has-prefix': $options.hasPrefix, 'has-suffix': $options.hasSuffix }]])
+    class: vue.normalizeClass(["vuerial-input", [{ 'is-readonly': $props.readonly || $props.disabled, 'has-prefix': $options.hasPrefix, 'has-suffix': $options.hasSuffix, 'is-underlined': $props.isUnderlined }]])
   }, [
     _hoisted_1$4,
     vue.withDirectives(vue.createElementVNode("input", vue.mergeProps({
@@ -624,7 +628,11 @@ var script$4 = {
         disabled: {
             type: Boolean,
             default: false
-        }
+        },
+        isUnderlined: {
+            type: Boolean,
+            default: false,
+        },
     },
     data() {
         return {
@@ -649,7 +657,7 @@ const _hoisted_3$2 = ["for"];
 
 function render$4(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("div", {
-    class: vue.normalizeClass(["vuerial-textarea", [{ 'is-readonly': $props.readonly || $props.disabled }]])
+    class: vue.normalizeClass(["vuerial-textarea", [{ 'is-readonly': $props.readonly || $props.disabled, 'is-underlined': $props.isUnderlined }]])
   }, [
     _hoisted_1$3,
     vue.withDirectives(vue.createElementVNode("textarea", {
@@ -849,6 +857,18 @@ var script$1 = {
             type: Array,
             required: true,
         },
+        isUnderlined: {
+            type: Boolean,
+            default: false,
+        },
+        inputAttributes: {
+            type: Object,
+            default: () => ({}),
+        },
+        inputEvents: {
+            type: Object,
+            default: () => ({}),
+        },
     },
     emits: ['update:modelValue'],
     beforeMount () {
@@ -1000,6 +1020,9 @@ function render$1(_ctx, _cache, $props, $setup, $data, $options) {
       label: $props.label,
       readonly: $props.readonly,
       disabled: $props.disabled,
+      "is-underlined": "isUnderlined",
+      "input-attributes": $props.inputAttributes,
+      "input-events": $props.inputEvents,
       onKeydown: [
         vue.withKeys($options.moveUp, ["up"]),
         vue.withKeys($options.moveDown, ["down"]),
@@ -1016,7 +1039,7 @@ function render$1(_ctx, _cache, $props, $setup, $data, $options) {
           : vue.createCommentVNode("v-if", true)
       ]),
       _: 1 /* STABLE */
-    }, 8 /* PROPS */, ["modelValue", "name", "label", "readonly", "disabled", "onKeydown"]),
+    }, 8 /* PROPS */, ["modelValue", "name", "label", "readonly", "disabled", "input-attributes", "input-events", "onKeydown"]),
     vue.withDirectives(vue.createElementVNode("div", {
       class: vue.normalizeClass(["vuerial-input-menu-container", {'menu-up': $data.space.direction === 'up'}])
     }, [
@@ -1053,6 +1076,18 @@ var script = {
         options: {
             type: Array,
             required: true,
+        },
+        isUnderlined: {
+            type: Boolean,
+            default: false,
+        },
+        inputAttributes: {
+            type: Object,
+            default: () => ({}),
+        },
+        inputEvents: {
+            type: Object,
+            default: () => ({}),
         },
     },
     emits: ['update:modelValue'],
@@ -1114,8 +1149,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       options: $options.items,
       label: $props.label,
       readonly: $props.readonly,
-      disabled: $props.disabled
-    }, null, 8 /* PROPS */, ["modelValue", "options", "label", "readonly", "disabled"])
+      disabled: $props.disabled,
+      "is-underlined": "isUnderlined",
+      "input-attributes": $props.inputAttributes,
+      "input-events": $props.inputEvents
+    }, null, 8 /* PROPS */, ["modelValue", "options", "label", "readonly", "disabled", "input-attributes", "input-events"])
   ]))
 }
 

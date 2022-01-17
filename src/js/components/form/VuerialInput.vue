@@ -1,5 +1,5 @@
 <template>
-<div class="vuerial-input" :class="[{ 'is-readonly': readonly || disabled, 'has-prefix': hasPrefix, 'has-suffix': hasSuffix }]">
+<div class="vuerial-input" :class="[{ 'is-readonly': readonly || disabled, 'has-prefix': hasPrefix, 'has-suffix': hasSuffix, 'is-underlined': isUnderlined }]">
     <div class="vuerial-input-style"></div>
     <input ref="input" v-model="input" :type="type" :id="id" :name="name" placeholder=" " :disabled="disabled" :readonly="readonly" :autocomplete="autocomplete ? 'on' : 'off'"
         @keydown.up.down.prevent
@@ -40,6 +40,10 @@ export default {
         disabled: {
             type: Boolean,
             default: false
+        },
+        isUnderlined: {
+            type: Boolean,
+            default: false,
         },
         inputAttributes: {
             type: Object,

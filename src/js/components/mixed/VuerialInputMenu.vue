@@ -3,7 +3,9 @@
         @focusin="showMenu = true"
         v-click-away="onIntentionalBlur" 
     >
-        <v-input v-model="value" :name="name" :label="label" :readonly="readonly" :disabled="disabled"
+        <v-input v-model="value" :name="name" :label="label" :readonly="readonly" :disabled="disabled" is-underlined="isUnderlined"
+            :input-attributes="inputAttributes"
+            :input-events="inputEvents"
             @keydown.up="moveUp" 
             @keydown.down="moveDown" 
             @keydown.enter.stop="onEnterDown" 
@@ -40,6 +42,18 @@ export default {
         options: {
             type: Array,
             required: true,
+        },
+        isUnderlined: {
+            type: Boolean,
+            default: false,
+        },
+        inputAttributes: {
+            type: Object,
+            default: () => ({}),
+        },
+        inputEvents: {
+            type: Object,
+            default: () => ({}),
         },
     },
     emits: ['update:modelValue'],

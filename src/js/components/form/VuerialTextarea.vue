@@ -1,5 +1,5 @@
 <template>
-<div class="vuerial-textarea" :class="[{ 'is-readonly': readonly || disabled }]">
+<div class="vuerial-textarea" :class="[{ 'is-readonly': readonly || disabled, 'is-underlined': isUnderlined }]">
     <div class="vuerial-textarea-style"></div>
     <textarea v-model="input" :id="id" :name="name" placeholder=" " :rows="rows" :cols="cols" :disabled="disabled" :readonly="readonly"></textarea>
     <label :for="id">{{ label }}</label>
@@ -24,7 +24,11 @@ export default {
         disabled: {
             type: Boolean,
             default: false
-        }
+        },
+        isUnderlined: {
+            type: Boolean,
+            default: false,
+        },
     },
     data() {
         return {
